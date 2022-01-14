@@ -1,10 +1,10 @@
 import React from "react";
 import { PlanetDisplay } from "../PlanetDisplay";
 
-export function Container() {
+export function Container({ planet }) {
   return (
     <main>
-      <PlanetDisplay />
+      <PlanetDisplay planet={planet} />
     </main>
   );
 }

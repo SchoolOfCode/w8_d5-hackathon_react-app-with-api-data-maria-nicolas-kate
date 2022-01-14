@@ -1,13 +1,10 @@
 import React from "react";
 import { HeaderList } from "../HeaderList";
 
-export function Header() {
-  function random() {
-    console.log("working");
-  }
+export function Header({ onClick }) {
   return (
     <header>
-      <HeaderList onClick={random} />
+      <HeaderList onClick={onClick} />
     </header>
   );
 }

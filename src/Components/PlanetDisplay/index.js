@@ -1,13 +1,17 @@
 import React from "react";
-import earth from "../../public/earth.jpg";
+// import earth from "../../public/earth.jpg";
+import venus from "../../public/venus.jpg";
 
-export function PlanetDisplay() {
+export function PlanetDisplay({ planet }) {
+  if (planet === undefined) {
+    return <h1>waiting</h1>;
+  }
   return (
     <article>
-      <img src={earth} alt="Earth" />
-      <h1>Earth</h1>
-      <p>Facts and stuff</p>
-      <p>Moons and info</p>
+      <img src={venus} alt="Venus" />
+      <h1>{planet.englishName}</h1>
+      <p>{planet.bodyType}</p>
+      <p>{planet.moons}</p>
     </article>
   );
 }
