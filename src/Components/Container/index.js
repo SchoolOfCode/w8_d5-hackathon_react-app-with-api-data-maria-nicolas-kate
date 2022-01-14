@@ -1,5 +1,10 @@
 import React from "react";
+import { PlanetDisplay } from "../PlanetDisplay";
 
 export function Container() {
-  return <main></main>;
+  return (
+    <main>
+      <PlanetDisplay />
+    </main>
+  );
 }
