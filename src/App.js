@@ -9,14 +9,14 @@ import { useState } from "react";
 
 function App() {
   const [planet, setPlanet] = useState(undefined);
-  async function fetchPlanetInfo() {
+  async function fetchPlanetInfo(text) {
     const fetchRequest = await fetch(
-      "https://api.le-systeme-solaire.net/rest/bodies?filter[]=englishName,eq,venus"
+      `https://api.le-systeme-solaire.net/rest/bodies?filter[]=englishName,eq,${text}`
     );
     const data = await fetchRequest.json();
     console.log(data, "hello");
-    setPlanet([data]);
-    console.log(planet);
+    setPlanet(data);
+    console.log(data);
   }
 
   return (
