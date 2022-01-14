@@ -30,3 +30,9 @@ User can select from a set list of planets/stars something to see more informati
 
 - Display (the planets in this will change)
   - Planet component (box with an img and text, an Item)
+
+## To pull from API:
+
+- englishName - ""
+- isPlanet - boolean
+- moons: null/array.map the moon name which is a string
