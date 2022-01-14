@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* our styles */
+.App ul {
+  list-style: none;
+}

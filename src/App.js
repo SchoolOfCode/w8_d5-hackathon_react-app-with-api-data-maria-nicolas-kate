@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Header } from "./Components/Header";
+import { Container } from "./Components/Container";
+import { useState } from "react";
+
+// useEffect
+
+// fetch request from API
 
 function App() {
+  const [planet, setPlanet] = useState(undefined);
+  async function fetchPlanetInfo(text) {
+    const fetchRequest = await fetch(
+      `https://api.le-systeme-solaire.net/rest/bodies?filter[]=englishName,eq,${text}`
+    );
+    const data = await fetchRequest.json();
+    console.log(data, "hello");
+    setPlanet(data);
+    console.log(data);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onClick={fetchPlanetInfo} />
+      <Container planet={planet} />
     </div>
   );
 }
