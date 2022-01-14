@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CIFCJGM9qbA_E3uIRxRM" name="Page-1">
-        <mxGraphModel dx="768" dy="304" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="666" dy="421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -39,6 +39,9 @@
                         <mxPoint x="370" y="470" as="sourcePoint"/>
                         <mxPoint x="420" y="420" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Sun button (eg.)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="90" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
