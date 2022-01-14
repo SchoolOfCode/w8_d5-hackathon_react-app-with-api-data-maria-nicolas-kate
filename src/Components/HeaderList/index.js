@@ -14,7 +14,7 @@ export function HeaderList({ onClick }) {
   return (
     <ul>
       {bodies.map(function (element, id) {
-        return <HeaderListItem text={element} id={id} onClick={onClick} />;
+        return <HeaderListItem text={element} id={id} onClick={onClick} key={id}/>;
       })}
     </ul>
   );
