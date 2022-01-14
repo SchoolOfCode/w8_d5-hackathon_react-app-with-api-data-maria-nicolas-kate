@@ -3,6 +3,9 @@ Planet db: https://api.le-systeme-solaire.net/en/
 Image db: https://pixabay.com/api/docs/
 
 MVP - Basic app requirements: 
+Homepage will display the planet which corresponds with that particular day of the week: 
+- Monday - Moon, Tues - Mars, Weds - Mercury, Thurs - Jupiter, Fri - Venus, Sat - Saturn, Sun - Sunday
+
 User can select from a set list of planets/stars something to see more information on.
 - App returns info on whatever they have selected.
 Component parts: 
